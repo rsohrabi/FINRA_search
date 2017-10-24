@@ -5,6 +5,7 @@ import json
 import sys
 import io
 import csv
+import logging
 
 try:
     to_unicode = unicode
@@ -13,7 +14,10 @@ except NameError:
 
 from pprint import pprint
 
-''' FINRA User Verification script'''
+''' FINRA User Verification script
+assumed to work on win32 with python 3. 
+No other OS or python version have been tested.
+'''
 # sample json data
 sample_data_json = {'a list': [1, 42, 3.124, 'help', u'$'],
                     'a string': 'blah blah',
@@ -26,7 +30,13 @@ BACK_2_HTTP = -2
 FIRST_POSITION = 0
 LAST_POSITION = 1
 ZIP_POSITION = 2
-
+#
+# This is the main routine of the script.
+# opens user input csv file, and for each entry, sends GET query to FINRA server.
+# Depending on search results, multiple GET queries may be needed
+# for each returned JSON, the target user is searched, and if found, returned.
+# if by end of search results, there is not match, then notfound is put in the
+# output .csv file.
 def main():
     # get command line args
     if len(sys.argv) != 2:
@@ -39,76 +49,52 @@ def main():
         usage()
         sys.exit(-1)
     csv_out_file = r'sample_input\outfile.csv'
+    with open('csv_out_file.csv', 'a',newline='') as csv_out_file:
+        wr = csv.writer(csv_out_file, dialect='excel')
+        wr.writerow(['first', 'last', 'zip', 'status'])
 
-    # todo: open log file for logging
-    # todo: open output CSV file
+    # open log file for logging
+    LOG_FILENAME = 'FINRAcheck.log'
+    logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
+    logging.info("FINRAchecker started.")
+    # open output CSV file
     report_user_status = {}
     with open(csv_input_file, 'rt') as csv_data_file:
         csvReader = csv.reader(csv_data_file, dialect='excel')
-        #drop the first row, as it is the tital
+        #drop the first row, as it is the title row
         next(csvReader, None)  # skip the headers
+
         for csv_row_count, row in enumerate(csvReader):
             search_info = {}
 
             first_name = row[FIRST_POSITION].strip()
             last_name = row[LAST_POSITION].strip()
             zipcode = row[ZIP_POSITION].strip()
-            first_and_last = first_name + ' ' + last_name
+            #first_and_last = first_name + ' ' + last_name
             # process each entry
-            print('first and last = %s zipcode %s' % (first_and_last, zipcode))
+            #print('first and last = %s zipcode %s' % (first_and_last, zipcode))
             search_all_user_matches(search_info, csv_row_count, first_name, last_name, zipcode)
+
             # if the search_info has value, then push to the output csv file
-            with open('csv_out_file.csv', 'w') as csv_out_file:
-                wr = csv.writer(csv_out_file, dialect='excel-tab')
+            # append a new row to the .csv file
+            with open('csv_out_file.csv', 'a', newline='') as csv_out_file:
+                wr = csv.writer(csv_out_file, dialect='excel')
                 if (len(search_info)):
-                    print("FOUND")
-                    data = [first_name, last_name, zipcode, 'FOUND']
+                    status = 'FOUND'
                 else:
-                    data = [first_name, last_name, zipcode, 'NOTFOUND']
-                    print("NOTFOUND")
-                #for item in data:
-                #    wr.writerow([item],)
-                wr.writerow([data],)
-
-            #URL_string = 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&nrows=12&query=%s&r=25&sort=&wt=json' % (first_and_last_url)
-            #print('URL is: %s' % (URL_string))
-            # Send GET request to server
-            #'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&lat=40.734332&lon=-74.010112&nrows=12&query=edward+Bennett&r=25&sort=&wt=json')
-            #response = urllib.request.urlopen(URL_string)
-
-            #line = response.read()
-            #line = line.decode('utf-8')
-            # print(line)
-            #fmt_line = clean_json_string(line, 25, -2)
-            #print(fmt_line)
-            #exit(1)
-            # todo: Read output from request
-            # content_json = response.read()
-            #json_data = json.loads(fmt_line)
-            # data = read_json_file(r'no_results.json')
-            #pprint(json_data, indent=2)
-            #process JSON retruned
-            #json_data = read_json_file(r'json\Edward_Bennett.json')
-            #pprint(json_data)
-
-
-    # todo: open CSV input file
+                    status = 'NOTFOUND'
+                wr.writerow([first_name, last_name, zipcode, status])
 
     exit(1)
 
-    # todo: Send GET request to server
-
-
-
-# pprint(content_json, indent=4)
-# print(json.dumps(json_data, indent=4, sort_keys=True, default=str))
-# print(to_string)
-# error_code = content_json['errorCode']
-# error_msg = content_json['errorMessage']
-# print('error_code: %s error_message %s' % (error_code, error_msg))
 #
-# todo: catagorize entry and put in out CSV
-# close all entry
+# search for all entries for a given first and last name.
+# zipcode is currently not used, but pass around for future use.
+#
+#  Search_results - this is a dictonary that contains information from each get of server
+#  found_item - if a match is found, this dictionary is populated and returned.
+#  first, last and zipcode are inputs from the input.csv file
+#
 def search_all_user_matches(user_info, csv_row_count, first, last, zipcode):
     #do first search results
     start_row = 0
@@ -140,7 +126,7 @@ def get_first_search_results(search_results, found_item, first, last, zipcode, s
     URL_string = 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&nrows=12&query=%s&r=25&sort=&wt=json' % (
     first_and_last_url)
     #URL_string = 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&nrows=12&query=%s&r=25&sort=&start=%s&wt=json' % (first_and_last_url,12)
-    print('URL is: %s' % (URL_string))
+    logging.debug('URL is: %s' % (URL_string))
     #Send GET request to server
     # 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&lat=40.734332&lon=-74.010112&nrows=12&query=edward+Bennett&r=25&sort=&wt=json')
     response = urllib.request.urlopen(URL_string)
@@ -153,12 +139,12 @@ def get_first_search_results(search_results, found_item, first, last, zipcode, s
     #data = read_json_data(json_data)
     # pprint(json_data, indent=2)
     # process JSON retruned
-    print('json error code: %s' % (json_data['errorCode']) )
+    logging.debug('json error code: %s' % (json_data['errorCode']) )
     if json_data['errorCode'] != 0:
-        print('request returned error with : %s' % json_data['errorMessage'])
+        logging.debug('request returned error with : %s' % json_data['errorMessage'])
     total_so_far = search_results['total_so_far'] = 0
     total_search_to_process = search_results['total_search_to_process'] = int(json_data['results']['BROKER_CHECK_REP']['totalResults'])
-    print('total_search_results: %d' % (search_results['total_search_to_process']))
+    logging.debug('total_search_results: %d' % (search_results['total_search_to_process']))
 
     current_search_processed = parse_search_json(json_data, search_results, total_so_far, first, last, zipcode)
 
