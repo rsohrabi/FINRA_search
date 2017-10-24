@@ -1,0 +1,351 @@
+{
+	"errorMessage": null,
+	"errorCode": 0,
+	"results": {
+		"BROKER_CHECK_REP": {
+			"totalResults": 81,
+			"results": [{
+				"fields": {
+					"bc_firstname": "ROY",
+					"bc_default_employment": "{\"bc_branch_city\":\"REDLANDS\",\"bc_branch_zip\":\"92373\",\"bc_firm_name\":\"SMART INVESTMENTS ADVISORY INCORPORATED\",\"bc_branch_state\":\"CA\",\"bc_firm_id\":107778,\"bc_branch_id\":\"4952879\"}",
+					"bc_employments_count": 2,
+					"bc_ia_scope": "Active",
+					"bc_current_employments": [{
+						"bc_reg_begin_date": 1165294800000,
+						"bc_branch_zip": "92373",
+						"bc_branch_street1": "1849 W. REDLANDS BLVD.",
+						"bc_branch_state": "CA",
+						"bc_firm_name": "WBB SECURITIES, LLC",
+						"bc_branch_city_alias": ["MARIGOLD", "REDLANDS", "SMILEY HEIGHTS"],
+						"bc_ia_only": "N",
+						"bc_branch_city": "REDLANDS",
+						"bc_firm_bc_scope": "ACTIVE",
+						"bc_branch_location": "33.999085,-117.148994",
+						"bc_branch_street2": "STE 104",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "312742",
+						"bc_firm_id": "118440"
+					}, {
+						"bc_ia_only": "Y",
+						"bc_branch_city": "REDLANDS",
+						"bc_branch_zip": "92373",
+						"bc_firm_bc_scope": "NOTINSCOPE",
+						"bc_branch_street1": "205 E STATE STREET",
+						"bc_branch_location": "33.999085,-117.148994",
+						"bc_branch_state": "CA",
+						"bc_firm_name": "SMART INVESTMENTS ADVISORY INCORPORATED",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "4952879",
+						"bc_firm_id": "107778",
+						"bc_branch_city_alias": ["MARIGOLD", "REDLANDS", "SMILEY HEIGHTS"]
+					}],
+					"bc_source_id": "2857389",
+					"bc_lastname": "BENNETT",
+					"bc_industry_cal_date": 858142800000,
+					"bc_approved_finra_registration_count": 1,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "Active",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "GLEN",
+					"bc_default_employment": "{\"bc_branch_city\":\"WASHINGTON\",\"bc_branch_zip\":\"20004-2582\",\"bc_firm_name\":\"LPL FINANCIAL LLC\",\"bc_branch_state\":\"DC\",\"bc_firm_id\":6413,\"bc_branch_id\":\"452136\"}",
+					"bc_employments_count": 1,
+					"bc_ia_scope": "Active",
+					"bc_current_employments": [{
+						"bc_reg_begin_date": 1020225600000,
+						"bc_branch_zip": "20004-2582",
+						"bc_branch_street1": "1101 PENNSYLVANIA AVE NW",
+						"bc_branch_state": "DC",
+						"bc_firm_name": "LPL FINANCIAL LLC",
+						"bc_branch_city_alias": ["WASHINGTON"],
+						"bc_ia_only": "N",
+						"bc_branch_city": "WASHINGTON",
+						"bc_firm_bc_scope": "ACTIVE",
+						"bc_branch_location": "38.892444,-77.020588",
+						"bc_branch_street2": "STE 300",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "452136",
+						"bc_firm_id": "6413"
+					}],
+					"bc_source_id": "2320846",
+					"bc_lastname": "BENNETT",
+					"bc_industry_cal_date": 787640400000,
+					"bc_approved_finra_registration_count": 1,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "Active",
+					"bc_disclosure_fl": "Y"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "ROBERT",
+					"bc_industry_days": 10040,
+					"bc_employments_count": 0,
+					"bc_ia_scope": "NotInScope",
+					"bc_source_id": "1520232",
+					"bc_lastname": "BENNETT",
+					"bc_other_names": ["BOB  BENNETT", "ROBERT E BENNETT"],
+					"bc_approved_finra_registration_count": 0,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "InActive",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_other_names": ["BOB  <em>BENNET</em>T", "ROBERT E <em>BENNET</em>T"],
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "WILLIAM",
+					"bc_industry_days": 5452,
+					"bc_employments_count": 0,
+					"bc_ia_scope": "NotInScope",
+					"bc_source_id": "2363955",
+					"bc_lastname": "BENNETT",
+					"bc_approved_finra_registration_count": 0,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "InActive",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_default_employment": "{\"bc_branch_city\":\"CANONSBURG\",\"bc_branch_zip\":\"15317\",\"bc_firm_name\":\"STATE FARM VP MANAGEMENT CORP.\",\"bc_branch_state\":\"PA\",\"bc_firm_id\":43036,\"bc_branch_id\":\"176922\"}",
+					"bc_ia_scope": "NotInScope",
+					"bc_current_employments": [{
+						"bc_reg_begin_date": 987393600000,
+						"bc_branch_zip": "15317",
+						"bc_branch_street1": "333 TECHNOLOGY DRIVE",
+						"bc_branch_state": "PA",
+						"bc_firm_name": "STATE FARM VP MANAGEMENT CORP.",
+						"bc_branch_city_alias": ["CANONSBURG", "MC MURRAY", "MCMURRAY"],
+						"bc_ia_only": "N",
+						"bc_branch_city": "CANONSBURG",
+						"bc_firm_bc_scope": "ACTIVE",
+						"bc_branch_location": "40.270503,-80.170961",
+						"bc_branch_street2": "SUITE 290",
+						"bc_firm_ia_scope": "NOTINSCOPE",
+						"bc_branch_id": "176922",
+						"bc_firm_id": "43036"
+					}],
+					"bc_other_names": ["DAN  BENNETT"],
+					"bc_scope": "Active",
+					"bc_disclosure_fl": "N",
+					"bc_firstname": "DANIEL",
+					"bc_employments_count": 1,
+					"bc_source_id": "4377333",
+					"bc_lastname": "BENNETT",
+					"bc_industry_cal_date": 987307200000,
+					"bc_approved_finra_registration_count": 1,
+					"bc_middlename": "EDWARD"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_other_names": "DAN  <em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "DONALD",
+					"bc_industry_days": 261,
+					"bc_employments_count": 0,
+					"bc_ia_scope": "NotInScope",
+					"bc_source_id": "5759924",
+					"bc_lastname": "BENNETT",
+					"bc_approved_finra_registration_count": 0,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "InActive",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "DANIEL",
+					"bc_industry_days": 2892,
+					"bc_employments_count": 0,
+					"bc_ia_scope": "NotInScope",
+					"bc_source_id": "4587800",
+					"bc_lastname": "BENNETT",
+					"bc_approved_finra_registration_count": 0,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "InActive",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_default_employment": "{\"bc_branch_city\":\"BOSTON\",\"bc_branch_zip\":\"02109\",\"bc_firm_name\":\"LPL FINANCIAL LLC\",\"bc_branch_state\":\"MA\",\"bc_firm_id\":6413,\"bc_branch_id\":\"97661\"}",
+					"bc_ia_scope": "NotInScope",
+					"bc_current_employments": [{
+						"bc_reg_begin_date": 1316145600000,
+						"bc_branch_zip": "02109",
+						"bc_branch_street1": "75 STATE STREET, 22ND FLOOR",
+						"bc_branch_state": "MA",
+						"bc_firm_name": "LPL FINANCIAL LLC",
+						"bc_branch_city_alias": ["BOSTON"],
+						"bc_ia_only": "N",
+						"bc_branch_city": "BOSTON",
+						"bc_firm_bc_scope": "ACTIVE",
+						"bc_branch_location": "42.363244,-71.053774",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "97661",
+						"bc_firm_id": "6413"
+					}],
+					"bc_scope": "Active",
+					"bc_disclosure_fl": "N",
+					"bc_firstname": "EDWARD",
+					"bc_employments_count": 1,
+					"bc_namesuffix": "JR",
+					"bc_source_id": "3160481",
+					"bc_lastname": "BENNETT",
+					"bc_industry_cal_date": 1238040000000,
+					"bc_approved_finra_registration_count": 1,
+					"bc_middlename": "LEWIS"
+				},
+				"highlightedFields": {
+					"bc_firstname": "<em>ED</em>WARD",
+					"bc_lastname": "<em>BENNET</em>T"
+				}
+			}, {
+				"fields": {
+					"bc_default_employment": "{\"bc_branch_city\":\"NEW YORK\",\"bc_branch_zip\":\"10282-2198\",\"bc_firm_name\":\"GOLDMAN SACHS & CO. LLC\",\"bc_branch_state\":\"NY\",\"bc_firm_id\":361,\"bc_branch_id\":\"150900\"}",
+					"bc_ia_scope": "NotInScope",
+					"bc_current_employments": [{
+						"bc_reg_begin_date": 1450674000000,
+						"bc_branch_zip": "10282-2198",
+						"bc_branch_street1": "200 WEST STREET",
+						"bc_branch_state": "NY",
+						"bc_firm_name": "GOLDMAN SACHS & CO. LLC",
+						"bc_branch_city_alias": ["MANHATTAN", "NEW YORK", "NEW YORK CITY", "NY", "NY CITY", "NYC"],
+						"bc_ia_only": "N",
+						"bc_branch_city": "NEW YORK",
+						"bc_firm_bc_scope": "ACTIVE",
+						"bc_branch_location": "40.716626,-74.014494",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "150900",
+						"bc_firm_id": "361"
+					}],
+					"bc_other_names": ["PETER E BENNETT"],
+					"bc_scope": "Active",
+					"bc_disclosure_fl": "N",
+					"bc_firstname": "PETER",
+					"bc_employments_count": 1,
+					"bc_source_id": "6542601",
+					"bc_lastname": "BENNETT",
+					"bc_industry_cal_date": 1450587600000,
+					"bc_approved_finra_registration_count": 1,
+					"bc_middlename": "EDWARD"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_other_names": "PETER E <em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_default_employment": "{\"bc_branch_city\":\"Stevenson Ranch\",\"bc_branch_zip\":\"91381\",\"bc_firm_name\":\"ARCHER INVESTMENT CORPORATION\",\"bc_branch_state\":\"CA\",\"bc_firm_id\":136403,\"bc_branch_id\":\"7560419\"}",
+					"bc_ia_scope": "Active",
+					"bc_current_employments": [{
+						"bc_ia_only": "Y",
+						"bc_branch_city": "Stevenson Ranch",
+						"bc_branch_zip": "91381",
+						"bc_firm_bc_scope": "NOTINSCOPE",
+						"bc_branch_street1": "25001 The Old Road",
+						"bc_branch_location": "34.37075,-118.616305",
+						"bc_branch_state": "CA",
+						"bc_firm_name": "ARCHER INVESTMENT CORPORATION",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "7560419",
+						"bc_firm_id": "136403",
+						"bc_branch_city_alias": ["NEWHALL", "SANTA CLARITA", "STEVENSON RANCH", "STEVENSON RNH", "VALENCIA"]
+					}],
+					"bc_other_names": ["JACK  BENNETT"],
+					"bc_scope": "InActive",
+					"bc_disclosure_fl": "N",
+					"bc_firstname": "JOHN",
+					"bc_industry_days": 5187,
+					"bc_employments_count": 1,
+					"bc_source_id": "4606176",
+					"bc_lastname": "BENNETT",
+					"bc_approved_finra_registration_count": 0,
+					"bc_middlename": "EDWARD"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_other_names": "JACK  <em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "FRANK",
+					"bc_industry_days": 16560,
+					"bc_employments_count": 0,
+					"bc_ia_scope": "InActive",
+					"bc_source_id": "18259",
+					"bc_lastname": "BENNETT",
+					"bc_approved_finra_registration_count": 0,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "InActive",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}, {
+				"fields": {
+					"bc_firstname": "MARK",
+					"bc_default_employment": "{\"bc_branch_city\":\"MEMPHIS\",\"bc_branch_zip\":\"38103\",\"bc_firm_name\":\"RAYMOND JAMES & ASSOCIATES, INC.\",\"bc_branch_state\":\"TN\",\"bc_firm_id\":705,\"bc_branch_id\":\"500704\"}",
+					"bc_employments_count": 1,
+					"bc_ia_scope": "NotInScope",
+					"bc_current_employments": [{
+						"bc_reg_begin_date": 1360731600000,
+						"bc_branch_zip": "38103",
+						"bc_branch_street1": "50 NORTH FRONT STREET",
+						"bc_branch_state": "TN",
+						"bc_firm_name": "RAYMOND JAMES & ASSOCIATES, INC.",
+						"bc_branch_city_alias": ["MEMPHIS"],
+						"bc_ia_only": "N",
+						"bc_branch_city": "MEMPHIS",
+						"bc_firm_bc_scope": "ACTIVE",
+						"bc_branch_location": "35.15684,-90.06845",
+						"bc_firm_ia_scope": "ACTIVE",
+						"bc_branch_id": "500704",
+						"bc_firm_id": "705"
+					}],
+					"bc_source_id": "1307137",
+					"bc_lastname": "BENNETT",
+					"bc_industry_cal_date": 622094400000,
+					"bc_approved_finra_registration_count": 1,
+					"bc_middlename": "EDWARD",
+					"bc_scope": "Active",
+					"bc_disclosure_fl": "N"
+				},
+				"highlightedFields": {
+					"bc_lastname": "<em>BENNET</em>T",
+					"bc_middlename": "<em>ED</em>WARD"
+				}
+			}]
+		}
+	},
+	"facets": null
+}

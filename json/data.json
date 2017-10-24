@@ -1,0 +1,511 @@
+{
+	'errorCode': 0,
+	'errorMessage': None,
+	'facets': None,
+	'results': {
+		'BROKER_CHECK_REP': {
+			'results': [{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'NEW '
+							'YORK',
+							'bc_branch_city_alias': ['MANHATTAN',
+								'NEW '
+								'YORK',
+								'NEW '
+								'YORK '
+								'CITY',
+								'NY',
+								'NY '
+								'CITY',
+								'NYC'
+							],
+							'bc_branch_id': '150900',
+							'bc_branch_location': '40.716626,-74.014494',
+							'bc_branch_state': 'NY',
+							'bc_branch_street1': '200 '
+							'WEST '
+							'STREET',
+							'bc_branch_zip': '10282-2198',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'ACTIVE',
+							'bc_firm_id': '361',
+							'bc_firm_name': 'GOLDMAN '
+							'SACHS '
+							'& '
+							'CO. '
+							'LLC',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1450674000000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"NEW '
+						'YORK","bc_branch_zip":"10282-2198","bc_firm_name":"GOLDMAN '
+						'SACHS '
+						'& '
+						'CO. '
+						'LLC","bc_branch_state":"NY","bc_firm_id":361,"bc_branch_id":"150900"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'PETER',
+						'bc_ia_scope': 'NotInScope',
+						'bc_industry_cal_date': 1450587600000,
+						'bc_lastname': 'BENNETT',
+						'bc_middlename': 'EDWARD',
+						'bc_other_names': ['PETER '
+							'E '
+							'BENNETT'
+						],
+						'bc_scope': 'Active',
+						'bc_source_id': '6542601'
+					},
+					'highlightedFields': {
+						'bc_lastname': '<em>BENNETT</em>',
+						'bc_middlename': '<em>ED</em>WARD',
+						'bc_other_names': 'PETER '
+						'E '
+						'<em>BENNETT</em>'
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'NEW '
+							'YORK',
+							'bc_branch_city_alias': ['MANHATTAN',
+								'NEW '
+								'YORK',
+								'NEW '
+								'YORK '
+								'CITY',
+								'NY',
+								'NY '
+								'CITY',
+								'NYC'
+							],
+							'bc_branch_id': '201065',
+							'bc_branch_location': '40.755149,-73.97497',
+							'bc_branch_state': 'NY',
+							'bc_branch_street1': '245 '
+							'PARK '
+							'AVENUE',
+							'bc_branch_zip': '10167',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'INACTIVE',
+							'bc_firm_id': '128351',
+							'bc_firm_name': 'SG '
+							'AMERICAS '
+							'SECURITIES, '
+							'LLC',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1340164800000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"NEW '
+						'YORK","bc_branch_zip":"10167","bc_firm_name":"SG '
+						'AMERICAS '
+						'SECURITIES, '
+						'LLC","bc_branch_state":"NY","bc_firm_id":128351,"bc_branch_id":"201065"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'EDWARD',
+						'bc_ia_scope': 'NotInScope',
+						'bc_industry_cal_date': 1035432000000,
+						'bc_lastname': 'MERMEL',
+						'bc_middlename': 'BENNETT',
+						'bc_other_names': ['EDWARD '
+							'(TED) '
+							'MERMEL',
+							'EDWARD '
+							'TED '
+							'MERMEL',
+							'TED  '
+							'MERMEL'
+						],
+						'bc_scope': 'Active',
+						'bc_source_id': '4401307'
+					},
+					'highlightedFields': {
+						'bc_firstname': '<em>ED</em>WARD',
+						'bc_middlename': '<em>BENNETT</em>',
+						'bc_other_names': ['<em>EDWARD</em> '
+							'(TED) '
+							'MERMEL',
+							'<em>EDWARD</em> '
+							'TED '
+							'MERMEL'
+						]
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'WEEHAWKEN',
+							'bc_branch_city_alias': ['WEEHAWKEN'],
+							'bc_branch_id': '88616',
+							'bc_branch_location': '40.768654,-74.016939',
+							'bc_branch_state': 'NJ',
+							'bc_branch_street1': '1200 '
+							'HARBOR '
+							'BOULEVARD',
+							'bc_branch_zip': '07086',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'ACTIVE',
+							'bc_firm_id': '8174',
+							'bc_firm_name': 'UBS '
+							'FINANCIAL '
+							'SERVICES '
+							'INC.',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1502683200000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"WEEHAWKEN","bc_branch_zip":"07086","bc_firm_name":"UBS '
+						'FINANCIAL '
+						'SERVICES '
+						'INC.","bc_branch_state":"NJ","bc_firm_id":8174,"bc_branch_id":"88616"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'Edward',
+						'bc_ia_scope': 'NotInScope',
+						'bc_industry_cal_date': 468133200000,
+						'bc_lastname': 'Tishelman',
+						'bc_middlename': 'Bennett',
+						'bc_other_names': ['ED  '
+							'TISHELMAN',
+							'EDWARD '
+							'BENNETT '
+							'TISHELMAN',
+							'Edward  '
+							'Tishelman'
+						],
+						'bc_scope': 'Active',
+						'bc_source_id': '1052949'
+					},
+					'highlightedFields': {
+						'bc_firstname': '<em>Ed</em>ward',
+						'bc_middlename': '<em>Bennett</em>',
+						'bc_other_names': ['<em>EDWARD</em> '
+							'<em>BENNETT</em> '
+							'TISHELMAN',
+							'<em>Edward</em>  '
+							'Tishelman',
+							'<em>ED</em>  '
+							'TISHELMAN'
+						]
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'SUMMIT',
+							'bc_branch_city_alias': ['SUMMIT'],
+							'bc_branch_id': '85576',
+							'bc_branch_location': '40.71228,-74.361706',
+							'bc_branch_state': 'NJ',
+							'bc_branch_street1': '190 '
+							'RIVER '
+							'RD',
+							'bc_branch_street2': '[RBO]',
+							'bc_branch_zip': '07901',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'ACTIVE',
+							'bc_firm_id': '19616',
+							'bc_firm_name': 'WELLS '
+							'FARGO '
+							'CLEARING '
+							'SERVICES, '
+							'LLC',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1165294800000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"SKILLMAN","bc_branch_zip":"08558","bc_firm_name":"WELLS '
+						'FARGO '
+						'CLEARING '
+						'SERVICES, '
+						'LLC","bc_branch_state":"NJ","bc_firm_id":19616,"bc_branch_id":"568066"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'EDWARD',
+						'bc_ia_scope': 'Active',
+						'bc_industry_cal_date': 616564800000,
+						'bc_lastname': 'BAND',
+						'bc_middlename': 'ALAN',
+						'bc_scope': 'Active',
+						'bc_source_id': '1951272'
+					},
+					'highlightedFields': {
+						'bc_firstname': '<em>ED</em>WARD'
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'NEW '
+							'YORK',
+							'bc_branch_city_alias': ['BEAR '
+								'STEARNS',
+								'NEW '
+								'YORK'
+							],
+							'bc_branch_id': '200878',
+							'bc_branch_location': '40.7143,-74.0067',
+							'bc_branch_state': 'NY',
+							'bc_branch_street1': '383 '
+							'MADISON '
+							'AVENUE',
+							'bc_branch_zip': '10179',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'ACTIVE',
+							'bc_firm_id': '79',
+							'bc_firm_name': 'J.P. '
+							'MORGAN '
+							'SECURITIES '
+							'LLC',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1224216000000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"NEW '
+						'YORK","bc_branch_zip":"10179","bc_firm_name":"J.P. '
+						'MORGAN '
+						'SECURITIES '
+						'LLC","bc_branch_state":"NY","bc_firm_id":79,"bc_branch_id":"200878"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'DANIEL',
+						'bc_ia_scope': 'NotInScope',
+						'bc_industry_cal_date': 1224129600000,
+						'bc_lastname': 'PINTO',
+						'bc_middlename': 'EDUARDO',
+						'bc_scope': 'Active',
+						'bc_source_id': '4953866'
+					},
+					'highlightedFields': {
+						'bc_middlename': '<em>ED</em>UARDO'
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+								'bc_branch_city': 'JERSEY '
+								'CITY',
+								'bc_branch_city_alias': ['JERSEY '
+									'CITY'
+								],
+								'bc_branch_id': '539315',
+								'bc_branch_location': '40.729066,-74.036211',
+								'bc_branch_state': 'NJ',
+								'bc_branch_street1': '525 '
+								'WASHINGTON '
+								'BLVD',
+								'bc_branch_zip': '07310',
+								'bc_firm_bc_scope': 'ACTIVE',
+								'bc_firm_ia_scope': 'ACTIVE',
+								'bc_firm_id': '6627',
+								'bc_firm_name': 'AXA '
+								'ADVISORS, '
+								'LLC',
+								'bc_ia_only': 'N',
+								'bc_reg_begin_date': 1063771200000
+							},
+							{
+								'bc_branch_city': 'JERSEY '
+								'CITY',
+								'bc_branch_city_alias': ['JERSEY '
+									'CITY'
+								],
+								'bc_branch_id': '104021',
+								'bc_branch_location': '40.729066,-74.036211',
+								'bc_branch_state': 'NJ',
+								'bc_branch_street1': '525 '
+								'WASHINGTON '
+								'BOULEVARD',
+								'bc_branch_zip': '07310',
+								'bc_firm_bc_scope': 'ACTIVE',
+								'bc_firm_ia_scope': 'NOTINSCOPE',
+								'bc_firm_id': '25900',
+								'bc_firm_name': 'AXA '
+								'DISTRIBUTORS, '
+								'LLC',
+								'bc_ia_only': 'N',
+								'bc_reg_begin_date': 1332129600000
+							}
+						],
+						'bc_default_employment': '{"bc_branch_city":"JERSEY '
+						'CITY","bc_branch_zip":"07310","bc_firm_name":"AXA '
+						'DISTRIBUTORS, '
+						'LLC","bc_branch_state":"NJ","bc_firm_id":25900,"bc_branch_id":"104021"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 2,
+						'bc_firstname': 'EDGAR',
+						'bc_ia_scope': 'Active',
+						'bc_industry_cal_date': 835934400000,
+						'bc_lastname': 'PINEDA',
+						'bc_middlename': 'PASCUA',
+						'bc_scope': 'Active',
+						'bc_source_id': '2355484'
+					},
+					'highlightedFields': {
+						'bc_firstname': '<em>ED</em>GAR'
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'NEW '
+							'YORK',
+							'bc_branch_city_alias': ['MANHATTAN',
+								'NEW '
+								'YORK',
+								'NEW '
+								'YORK '
+								'CITY',
+								'NY',
+								'NY '
+								'CITY',
+								'NYC'
+							],
+							'bc_branch_id': '203244',
+							'bc_branch_location': '40.758908,-73.97902',
+							'bc_branch_state': 'NY',
+							'bc_branch_street1': '1251 '
+							'AVENUE '
+							'OF '
+							'THE '
+							'AMERICAS, '
+							'6TH '
+							'FLOOR',
+							'bc_branch_zip': '10020',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'NOTINSCOPE',
+							'bc_firm_id': '23328',
+							'bc_firm_name': 'SANDLER, '
+							"O'NEILL "
+							'& '
+							'PARTNERS, '
+							'L.P.',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1309320000000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"NEW '
+						'YORK","bc_branch_zip":"10020","bc_firm_name":"SANDLER, '
+						"O'NEILL "
+						'& '
+						'PARTNERS, '
+						'L.P.","bc_branch_state":"NY","bc_firm_id":23328,"bc_branch_id":"203244"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'JORGE',
+						'bc_ia_scope': 'NotInScope',
+						'bc_industry_cal_date': 1309233600000,
+						'bc_lastname': 'PUENTE',
+						'bc_middlename': 'EDUARDO',
+						'bc_scope': 'Active',
+						'bc_source_id': '5016458'
+					},
+					'highlightedFields': {
+						'bc_middlename': '<em>ED</em>UARDO'
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'NEW '
+							'YORK',
+							'bc_branch_city_alias': ['FRANKLIN '
+								'D '
+								'ROOSEVELT',
+								'MANHATTAN',
+								'NEW '
+								'YORK',
+								'NEW '
+								'YORK '
+								'CITY',
+								'NY',
+								'NY '
+								'CITY',
+								'NYC'
+							],
+							'bc_branch_id': '141780',
+							'bc_branch_location': '40.758346,-73.967997',
+							'bc_branch_state': 'NY',
+							'bc_branch_street1': '711 '
+							'FIFTH '
+							'AVENUE',
+							'bc_branch_zip': '10022',
+							'bc_firm_bc_scope': 'ACTIVE',
+							'bc_firm_ia_scope': 'INACTIVE',
+							'bc_firm_id': '6271',
+							'bc_firm_name': 'SUNTRUST '
+							'ROBINSON '
+							'HUMPHREY, '
+							'INC.',
+							'bc_ia_only': 'N',
+							'bc_reg_begin_date': 1491796800000
+						}],
+						'bc_default_employment': '{"bc_branch_city":"NEW '
+						'YORK","bc_branch_zip":"10022","bc_firm_name":"SUNTRUST '
+						'ROBINSON '
+						'HUMPHREY, '
+						'INC.","bc_branch_state":"NY","bc_firm_id":6271,"bc_branch_id":"141780"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 1,
+						'bc_firstname': 'EDGARD',
+						'bc_ia_scope': 'InActive',
+						'bc_industry_cal_date': 1405310400000,
+						'bc_lastname': 'PUENTE '
+						'HILL',
+						'bc_middlename': 'ROBERTO',
+						'bc_scope': 'Active',
+						'bc_source_id': '6256233'
+					},
+					'highlightedFields': {
+						'bc_firstname': '<em>ED</em>GARD'
+					}
+				},
+				{
+					'fields': {
+						'bc_approved_finra_registration_count': 1,
+						'bc_current_employments': [{
+							'bc_branch_city': 'RIDGEWOOD',
+							'bc_branch_city_alias': ['RIDGEWOOD'],
+							'bc_branch_id': '7435645',
+							'bc_branch_location': '40.98145,-74.110992',
+							'bc_branch_state': 'NJ',
+							'bc_firm_bc_scope': 'NOTINSCOPE',
+							'bc_firm_ia_scope': 'ACTIVE',
+							'bc_firm_id': '106982',
+							'bc_firm_name': 'VIRTUS '
+							'INVESTMENT '
+							'ADVISERS, '
+							'INC.',
+							'bc_ia_only': 'Y'
+						}],
+						'bc_default_employment': '{"bc_branch_city":"RIDGEWOOD","bc_branch_zip":null,"bc_firm_name":"VIRTUS '
+						'INVESTMENT '
+						'ADVISERS, '
+						'INC.","bc_branch_state":"NJ","bc_firm_id":106982,"bc_branch_id":"7435645"}',
+						'bc_disclosure_fl': 'N',
+						'bc_employments_count': 2,
+						'bc_firstname': 'WILLIAM',
+						'bc_ia_scope': 'Active',
+						'bc_industry_cal_date': 809236800000,
+						'bc_lastname': 'BOND',
+						'bc_middlename': 'EDWIN',
+						'bc_scope': 'Active',
+						'bc_source_id': '2614644'
+					},
+					'highlightedFields': {
+						'bc_middlename': '<em>ED</em>WIN'
+					}
+				}
+			],
+			'totalResults': 9
+		}
+	}
+}
