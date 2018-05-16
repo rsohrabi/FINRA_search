@@ -1,2 +1,2 @@
 # FINRA_search
-Check user from Angular JS web site
+Check user information from an Angular JS web site.
