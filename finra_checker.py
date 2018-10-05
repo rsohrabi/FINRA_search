@@ -20,7 +20,7 @@ from pprint import pprint
 VERSION = '1.0'
 
 ''' FINRA User Verification script
-assumed to work on win32 with python 3. 
+assumed to work on win32 with python 3.
 No other OS or python version have been tested.
 '''
 # sample json data
@@ -53,7 +53,7 @@ def main():
         sys.exit(1)
     # read INPUT CSV
     csv_input_file = sys.argv[1]
-    if (csv_input_file.endswith('.csv') is False):
+    if csv_input_file.endswith('.csv') is False:
         print("Expecting .csv file")
         usage()
         sys.exit(-1)
@@ -96,7 +96,7 @@ def main():
 
             with open('csv_out_file.csv', 'a', newline='') as csv_out_file:
                 wr = csv.writer(csv_out_file, dialect='excel')
-                if (len(search_info)):
+                if len(search_info):
                     ret_CRD = search_info['ret_crd']  # this is the returned CRD# from web site
 
                     # todo:  Excel seems to strip the zip code with leading zeros.
