@@ -1,21 +1,19 @@
 #!/usr/bin/python
 import urllib.request
 from urllib.error import URLError, HTTPError
-import signal
 import json
 import sys
 import io
 import csv
 import logging
-from datetime import datetime, date, time, timedelta
+from datetime import date, time
 import time
 
-try:
-    to_unicode = unicode
-except NameError:
-    to_unicode = str
+# try:
+#     to_unicode = unicode
+# except NameError:
+#     to_unicode = str
 
-from pprint import pprint
 
 VERSION = '1.0'
 
@@ -23,7 +21,8 @@ VERSION = '1.0'
 assumed to work on win32 with python 3.
 No other OS or python version have been tested.
 '''
-# sample json data
+
+    # sample json data
 sample_data_json = {'a list': [1, 42, 3.124, 'help', u'$'],
                     'a string': 'blah blah',
                     'another dict': {'foo': 'bar',
@@ -35,8 +34,8 @@ BACK_2_HTTP = -2
 FIRST_POSITION = 0
 LAST_POSITION = 1
 ZIP_POSITION = 2
-DELAY = 1 # delay in seconds to be nice with FINRA server
-DEFAULT_ROW_SIZE = 12 # number of rows to request per query
+DELAY = 1  # delay in seconds to be nice with FINRA server
+DEFAULT_ROW_SIZE = 12  # number of rows to request per query
 
 
 #
@@ -221,7 +220,7 @@ def get_subsequent_search_results(search_results, found_item, first, last, zipco
     # URL_string = 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&nrows=12&query=%s&r=25&sort=&wt=json' % (
     # first_and_last_url)
     URL_string = 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&nrows=12&query=%s&r=25&sort=&start=%s&wt=json' % (
-    first_and_last_url, start_row)
+        first_and_last_url, start_row)
     print('URL is: %s' % (URL_string))
     # Send GET request to server
     # 'https://doppler.finra.org/doppler-lookup/api/v1/search/individuals?hl=true&includePrevious=true&json.wrf=angular.callbacks._j&lat=40.734332&lon=-74.010112&nrows=12&query=edward+Bennett&r=25&sort=&wt=json')
@@ -303,8 +302,6 @@ def clear_unwanted_users(data):
             del (data[i])
     except (ValueError, KeyError, TypeError):
         pass
-
-
 
 
 def clean_json_string(data, begin_index, end_index):
